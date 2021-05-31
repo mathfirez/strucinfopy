@@ -12,6 +12,8 @@ The only requirements to run this script properly are:
   - Second atom bonded to the central atom (in this case the other oxygen atom (O_2) or B_2 for generic AB2 systems)
 3. The remaining atoms (which do not belong to CO2 (or AB2) structure) must be ordered below these lines (see geometry.in file)
 4. Changing the range on line 63 to the number of lines in the geometry.in file + 1 (due to the nature of python's range() usage):
+
+```
       Line 00      atom         2.402734        -0.028403        -0.021966 	 C
       Line 01      atom         2.862152        -0.005643        -1.198981 	 O
       Line 02      atom         2.885556        -0.059046         1.145482 	 O
@@ -23,8 +25,10 @@ The only requirements to run this script properly are:
       Line 08      atom         0.666021        -0.036290         1.230236 	 Os
       Line 09      atom        -0.983869         1.632844         1.219978 	 Os
       Line 10      atom        -1.024342        -1.662483         1.146533 	 Os  <-------- 10 + 1 = 11
-      
-      In the scripto.py file:
+
+```
+In the scripto.py file:
+
             for i in range(3, 11):
-            
-      Feel free to fork, improve and share!
+   
+Feel free to fork, improve and share!
